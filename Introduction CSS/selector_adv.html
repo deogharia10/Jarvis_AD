@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* h1:hover {
+            background-color: #215d95;
+        } */
+        button:focus{
+            background-color: #2f2c2c;
+        }
+        input:disabled{
+            background-color: #22491b;
+        }
+        div:first-child {
+            background-color: #147777;
+
+        }
+        div :last-child {
+            background-color: #142177;
+
+        }
+        div :nth-child(2n) {
+            background-color: #b8b120;
+
+        }
+        
+        /* special */
+        h1::after{
+            content: "After!";
+            color: #ff0000;
+            /* height: 20;
+            width: 20; */
+        }
+        h1::before{
+            content: "before!";
+            color: #0011ff;
+
+        }
+        /* p::first-line{
+            background-color: #b8b120;
+        } */
+        p::first-letter{
+            background-color: #b8b120;
+            font-size: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <input disabled type="checkbox" name="" id="">
+    <button>Submit</button>
+
+    <h1>Hover</h1>
+    <button>Focus</button>
+    <input type="text" required="true" />
+    <input type="checkbox" />
+    <input type="text" disabled="true" />
+    <div>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+    </div>
+
+    <h1>Pseudo before and after Selector</h1>
+    <h1>First letter Selector</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero consequuntur unde quos cumque optio nobis saepe tempore dolor praesentium blanditiis qui, ad a impedit doloribus at ipsa voluptate. Explicabo?</p>
+</body>
+</html>
