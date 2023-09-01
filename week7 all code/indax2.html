@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Sandbox</title>
+    <style>
+        .container {
+            display: grid;
+            height: 50vh;
+            grid-template-areas: 
+            "header header header"
+            "sidebar main main"
+            "footer footer footer ";
+            
+
+        }
+        .header {
+            grid-area: header;
+            background: #f10a0a;
+
+        }
+        .footer {
+            grid-area: footer;
+            background: #0a25f1;
+
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background: #f1da0a;
+        }
+        .main {
+            grid-area: main;
+            background: #19f10a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="footer">Footer</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main">Main Content</div>
+        <div></div>
+    </div>
+</body>
+</html>
