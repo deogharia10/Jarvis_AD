@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+        }
+
+        img{
+            filter: blur(10px);
+            filter: brightness(0.5);
+            filter:grayscale(1);
+            filter: hue-rotate(75deg);
+            filter: drop-shadow(30px 10px 2px    #3fb1e2) hue-rotate(90deg)
+            drop-shadow(30px 10px 2px #3fb1e2 );
+
+
+        } */ 
+
+        .box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #f306df;
+            border-radius: 70%;
+            animation: move 1s ease-in-out 0s 1 alternate
+        }
+        .box1{
+            animation: move 1s ease-in-out 0s 100 alternate;
+        }
+
+        .box2{
+            animation: move 1s ease-in-out 0s 500 alternate;
+            top: 100px;
+        }
+
+        .box3{
+            animation: move 1s ease-in-out 0s 1000 alternate;
+            top: 200px;
+        }
+
+        .button {
+            --color: green;
+            padding: 0.5rem;
+            border: 1px solid var(--color);
+            color: var(--color);
+        }
+        .button:hover {
+            --color: blue;
+        } 
+        .btn_red {
+            --color: red;
+        }
+
+
+
+        @keyframes move {
+            form{
+                left: 0px;
+            }
+            to {
+                left: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <img src="/photo-1499209974431-9dddcece7f88.jpeg" alt=""
+        width="100%">
+    </div> -->
+    <!-- <div class="box"></div>
+    <div class="box  box1"></div>
+    <div class="box  box2"></div>
+    <div class="box  box3"></div> -->
+
+    <a class="button" href="#">Button Green</a>
+    <a class="button btn_red" href="#">Button Red</a>
+    <a class="button" href="#">Button Hover on</a>
+</body>
+</html>
